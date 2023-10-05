@@ -1,25 +1,16 @@
-import React from 'react';
-import logo from './logo.svg';
+import Vote from "./Components/Vote";
+import Result from "./Components/Result";
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <div className="w-full flex flex-col justify-center items-center m-3 ">
+      <p className="text-xl text-green-800 font-bold">
+       Vote your fav character...
+      </p>
+      <Vote/>
+      <Result/>
+  </div>
   );
 }
 
